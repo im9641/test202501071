@@ -34,6 +34,24 @@
             font-weight: bold;
             text-align: center;
             padding: 8px;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            background: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 24px;
+            text-align: center;
         }
 
         table {
@@ -78,29 +96,14 @@
         .footer a:hover {
             text-decoration: underline;
         }
-
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #f44336;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            font-size: 16px;
-            cursor: pointer;
-            line-height: 24px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
     <div class="receipt-container" id="receipt">
-        <button class="close-btn" onclick="closeReceipt()">×</button>
-        <!-- 결제정보 섹션 -->
-        <div class="section-header">결제정보</div>
+        <div class="section-header">
+            결제정보
+            <button class="close-btn" onclick="closeReceipt()">×</button>
+        </div>
         <table>
             <tr>
                 <th>구매자명</th>
