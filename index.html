@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOVAN 온라인매출전표</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .receipt-container {
+            background: white;
+            width: 360px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        .section-header {
+            background-color: #0044cc;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border-bottom: 1px solid #eee;
+            padding: 6px 10px;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            text-align: left;
+            color: #555;
+        }
+
+        td {
+            text-align: right;
+            color: #333;
+        }
+
+        .small-text {
+            font-size: 10px;
+            color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <!-- 결제정보 섹션 -->
+        <div class="section-header">결제정보</div>
+        <table>
+            <tr>
+                <th>구매자명</th>
+                <td>김대리님</td>
+            </tr>
+            <tr>
+                <th>거래일시</th>
+                <td>2024-12-30 17:07:04</td>
+            </tr>
+            <tr>
+                <th>상품명</th>
+                <td>올레빠TV_올티튜브_정액권</td>
+            </tr>
+            <tr>
+                <th>결제방법</th>
+                <td>신용카드</td>
+            </tr>
+            <tr>
+                <th>카드종류</th>
+                <td>비씨카드</td>
+            </tr>
+            <tr>
+                <th>카드번호</th>
+                <td>5589-2098-****-344*</td>
+            </tr>
+            <tr>
+                <th>거래유형</th>
+                <td>승인</td>
+            </tr>
+            <tr>
+                <th>할부개월</th>
+                <td>0개월</td>
+            </tr>
+            <tr>
+                <th>승인번호</th>
+                <td>35679141</td>
+            </tr>
+            <tr>
+                <th>결제금액</th>
+                <td>672,210원</td>
+            </tr>
+            <tr>
+                <th>공급가액</th>
+                <td>611,100원</td>
+            </tr>
+            <tr>
+                <th>부가세</th>
+                <td>61,110원</td>
+            </tr>
+        </table>
+
+        <!-- 상점정보 섹션 -->
+        <div class="section-header">상점정보</div>
+        <table>
+            <tr>
+                <th>상점명</th>
+                <td>프로티지</td>
+            </tr>
+            <tr>
+                <th>대표자명</th>
+                <td>여용인</td>
+            </tr>
+            <tr>
+                <th>사업자등록번호</th>
+                <td>644-88-00943</td>
+            </tr>
+            <tr>
+                <th>사업장주소</th>
+                <td>서울 금천구 가산디지털2로 135 (가산동, 가산 안빌워크A동 1504호)</td>
+            </tr>
+            <tr>
+                <th>이용문의</th>
+                <td>1566-9999</td>
+            </tr>
+        </table>
+        <div class="footer">사이트 주소(URL): <a href="https://www.mordor.co.kr/ordermain/S2407DX1..." target="_blank">https://www.mordor.co.kr/ordermain/S2407DX1...</a></div>
+
+        <!-- 결제서비스 제공자 섹션 -->
+        <div class="section-header">결제서비스 제공자</div>
+        <div class="small-text" style="text-align: center; padding: 10px;">
+            이지플랫전자결제(주) 1566-9805
+        </div>
+    </div>
+</body>
+</html>
